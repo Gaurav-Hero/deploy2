@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Tailwind';
+    font-weight:lighter;
+}
+@font-face {
+    font-family: TailWind;
+    src: url(/Tailwind\ Black.ttf);
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #e2fafd;
+    position: relative;
+
+}
+nav{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+
+}
+.nav-items:hover{
+    background-color: #00dbca;
+    transition: all ease-in-out 500ms;
+    color: #ffffff
+}
+.dash-main{
+    font-weight: lighter;
+    line-height: 22px;
+    padding: 15px;
+}
+.dash-main > h2{
+    color: #00dacb;
+    padding: 10px;
+}
+.dash-main > h2 > pre{
+    color: #005a91;
+}
+.dash-main > p{
+    color: #f1a859;
+}
+.colorchange{
+    background-color: black;
+}
