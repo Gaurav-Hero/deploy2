@@ -135,3 +135,8 @@ form{
     color:#0a66c2 ;
     font-size: smaller;
 }
+.submit:hover{
+    background-color:#178bff;
+    transition: all ease-in-out 500ms;
+    color: white
+}
