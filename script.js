@@ -1,7 +1,7 @@
 let main = document.querySelector('.dash-main')
 let loginBtn = document.querySelector('.logBtn')
 loginBtn.addEventListener('click',function(){
-    main.innerHTML ='<div class="lgn"><div class="form"><h2>Sign in</h2><h6>Stay updated on your chit chats</h6><form method="POST" name="login" class="login"><input type="text" name="usr" id="usr" placeholder="Username or Email" autofocus ><br><input type="password" name="pass" id="pass" placeholder="Password" required><br><input type="submit" value="LOGIN" class="submit"><span class="show" onclick= "show()" >show</span></form></div></div>';
+    main.innerHTML ='<div class="form"><h2>Login</h2><h6>Stay updated on your chit chats</h6><form method="POST" name="login" class="login"><input type="text" name="usr" id="usr" placeholder="Username or Email" autofocus ><br><input type="password" name="pass" id="pass" placeholder="Password" required><br><input type="submit" value="LOGIN" class="submit"><span class="show" onclick= "show()" >show</span><span class="createacc" onclick="createacc()">Don\'t have an Account?</span></form></div>';
 })
 let text = document.querySelector('#nav-part2')
 let body  = document.querySelector('#page1');
@@ -27,4 +27,9 @@ function show(){
     else {
         input.type="password";
     }
+}
+// create account button js-----
+function createacc(){
+    main.innerHTML='HI';
+    console.log("clicked");  
 }

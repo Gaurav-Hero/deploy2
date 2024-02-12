@@ -13,6 +13,10 @@ html,body{
     margin: 0;
     padding: 0;
 }
+img{
+    width:20vw;
+    display: block;
+}
 #page1{
     min-height: 100vh;
     min-width:100vw;
@@ -24,8 +28,8 @@ nav{
     padding-right: 2vw;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 #nav-part2{
     display: flex;
@@ -33,7 +37,7 @@ nav{
     gap: 1vw;
 }
 #nav-part2 h4{
-    padding: 10px 20px;
+    padding: 1vh 3vw;
     border: 1px solid #8a8a8a89;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -45,13 +49,13 @@ nav{
 }
 .dash-main{
     font-weight: lighter;
-    line-height: 22px;
-    padding: 15px;
+    line-height:22px;
+    padding: 2vw;
 }
 
 .dash-main > h2{
     color: #00dacb;
-    padding: 10px;
+    padding: 1vw;
 }
 .dash-main > h2 > pre{
     color: #005a91;
@@ -59,38 +63,38 @@ nav{
 .dash-main > p{
     color: #fac382;
 }
-.lgn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:0;
-    height:50vh;
-}
 .form{
+    display: flex;
+    margin-left:25%;
+    width: 50%;
+    height:25%;
     background-color: white;
-    background-position: 50px;
     background-size: contain;
     border: 1px solid white ;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    min-height:60vh;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
 }
 form{
-    padding-top: 7vh;
+    padding-top: 3vh;
     padding-left: 3vh;
+    padding-right: 3vh;
     text-align: left;
-    line-height: 60px;
+    line-height: 10vh;
+    width:100%;
 }
 #usr{
     border : 1px solid #0e0c0c89;
     border-radius: 2px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 1vw;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 8vh;
-    width: 43vw;
+    width: 100%;
     color:black;
     font-weight: thin;
     
@@ -98,28 +102,26 @@ form{
 #pass{
     border : 1px solid #0e0c0c89;
     border-radius: 2px;
-    text-align:left;
+    text-align: left;
+    padding-left: 1vw;
     box-sizing: border-box;
-    padding-left: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 8vh;
-    width: 43vw;
+    width: 100%;
     color:black;
     font-weight: thin;
 }
 .form > h2{
-    padding-left: 3vw;
     padding-top: 3vw;
 }
 .form > h6{
-    padding-left: 3vw;
     padding-top: 1vw;
     font-style: italic;
     font-weight: lighter;
 }
 .submit{
     height: 8vh;
-    width: 43vw;
+    width: 100%;
     background-color: #0a66c2;
     border: none;
     border-radius: 50px;
@@ -130,8 +132,7 @@ form{
 .show{
     cursor:pointer;
     position:relative;
-    left:-40px;
-    top:-60px;
+    overflow: hidden;
     color:#0a66c2 ;
     font-size: smaller;
 }
@@ -139,4 +140,12 @@ form{
     background-color:#178bff;
     transition: all ease-in-out 500ms;
     color: white
+}
+.createacc{
+    display: block;
+    color:#0a66c2 ;
+    font-size: smaller;
+    text-decoration: none;
+    cursor:pointer;
+
 }
