@@ -9,7 +9,7 @@ let flag = 0;
 let img = document.querySelector('img');
 img.addEventListener('click',function(){
     if (flag == 0){
-        body.style.backgroundColor="black";
+        body.style.backgroundColor="#202124";
         text.style.color="cyan";
          flag= 1;
     }
