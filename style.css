@@ -63,89 +63,89 @@ nav{
 .dash-main > p{
     color: #fac382;
 }
-.form{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form {
     display: flex;
-    margin-left:25%;
-    width: 50%;
-    height:25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
     background-color: white;
-    background-size: contain;
-    border: 1px solid white ;
+    border: 1px solid white;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;  
 }
-form{
-    padding-top: 3vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
+form {
+    padding: 20px;
     text-align: left;
-    line-height: 10vh;
-    width:100%;
+    width: 100%;
 }
-#usr{
-    border : 1px solid #0e0c0c89;
-    border-radius: 2px;
+
+#usr,
+#pass {
+    border: 1px solid #0e0c0c89;
+    border-radius: 5px;
     text-align: left;
-    padding-left: 1vw;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 8vh;
+    margin-bottom: 15px;
     width: 100%;
-    color:black;
-    font-weight: thin;
-    
-}
-#pass{
-    border : 1px solid #0e0c0c89;
-    border-radius: 2px;
-    text-align: left;
-    padding-left: 1vw;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 8vh;
-    width: 100%;
-    color:black;
+    color: black;
     font-weight: thin;
 }
-.form > h2{
-    padding-top: 3vw;
+
+.form > h2 {
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
-.form > h6{
-    padding-top: 1vw;
+
+.form > h6 {
+    padding-top: 5px;
     font-style: italic;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
-.submit{
-    height: 8vh;
+
+.submit {
+    height: 40px;
     width: 100%;
     background-color: #0a66c2;
     border: none;
-    border-radius: 50px;
-    color:white;
+    border-radius: 25px;
+    color: white;
     font-weight: lighter;
-    position:relative;
+    cursor: pointer;
 }
-.show{
-    cursor:pointer;
-    position:relative;
-    overflow: hidden;
-    color:#0a66c2 ;
-    font-size: smaller;
+
+.submit:hover {
+    background-color: #178bff;
+    transition: background-color ease-in-out 0.5s;
 }
-.submit:hover{
-    background-color:#178bff;
-    transition: all ease-in-out 500ms;
-    color: white
-}
-.createacc{
-    display: block;
-    color:#0a66c2 ;
+
+.show,
+.createacc {
+    cursor: pointer;
+    color: #0a66c2;
     font-size: smaller;
     text-decoration: none;
-    cursor:pointer;
-
+    display: block;
+    margin-top: 10px;
 }
+
+/* Add any additional styles as needed */
+@media only screen and (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+}
+
