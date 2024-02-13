@@ -14,7 +14,7 @@ html,body{
     padding: 0;
 }
 img{
-    width:20vw;
+    width:200px;
     display: block;
 }
 #page1{
@@ -63,20 +63,14 @@ nav{
 .dash-main > p{
     color: #fac382;
 }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.form {
+.form , .form1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10% auto;
     width: 80%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     background-color: white;
     border: 1px solid white;
@@ -84,14 +78,13 @@ body {
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
-form {
+.login , .signup{
     padding: 20px;
     text-align: left;
     width: 100%;
 }
-
 #usr,
-#pass {
+#pass , #passw , #usrname , #email , #phone{
     border: 1px solid #0e0c0c89;
     border-radius: 5px;
     text-align: left;
@@ -104,19 +97,19 @@ form {
     font-weight: thin;
 }
 
-.form > h2 {
-    padding-top: 10px;
+.form1>h2 ,.form > h2 {
+    padding-top: 20px;
     margin-bottom: 10px;
 }
 
-.form > h6 {
-    padding-top: 5px;
+.form1 > h6 ,.form > h6 {
+    padding-top: 4px;
     font-style: italic;
     font-weight: lighter;
     margin-bottom: 20px;
 }
 
-.submit {
+.submit , .sign{
     height: 40px;
     width: 100%;
     background-color: #0a66c2;
@@ -131,11 +124,23 @@ form {
     background-color: #178bff;
     transition: background-color ease-in-out 0.5s;
 }
-
-.show,
-.createacc {
+.sign:hover {
+    background-color: #178bff;
+    transition: background-color ease-in-out 0.5s;
+}
+.show , .shows{
     cursor: pointer;
     color: #0a66c2;
+    font-size: smaller;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    top:55p;
+}
+.createacc , .login {
+    cursor: pointer;
+    color: #0a66c2;  
     font-size: smaller;
     text-decoration: none;
     display: block;
