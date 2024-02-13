@@ -84,7 +84,7 @@ nav{
     width: 100%;
 }
 #usr,
-#pass , #passw , #usrname , #email , #phone{
+#pass , #passw , #usrname , #email , #phone , #passwr{
     border: 1px solid #0e0c0c89;
     border-radius: 5px;
     text-align: left;
@@ -97,13 +97,13 @@ nav{
     font-weight: thin;
 }
 
-.form1>h2 ,.form > h2 {
+.form1>h2 , .form > h2 {
     padding-top: 20px;
     margin-bottom: 10px;
 }
 
-.form1 > h6 ,.form > h6 {
-    padding-top: 4px;
+.form1 > h6 , .form > h6 {
+    padding-top: 3px;
     font-style: italic;
     font-weight: lighter;
     margin-bottom: 20px;
@@ -138,7 +138,7 @@ nav{
     text-align: right;
     top:55p;
 }
-.createacc , .login {
+.createacc , .logins{
     cursor: pointer;
     color: #0a66c2;  
     font-size: smaller;
